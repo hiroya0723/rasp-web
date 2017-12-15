@@ -1,0 +1,183 @@
+Started GET "/" for 192.168.0.10 at 2017-12-12 23:46:00 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (21.1ms)
+Completed 200 OK in 789ms (Views: 40.0ms)
+
+
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+Started GET "/hello/index" for 192.168.0.10 at 2017-12-15 01:05:56 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HelloController#index as HTML
+Completed 500 Internal Server Error in 728ms
+
+
+  
+ActionView::MissingTemplate (Missing template hello/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pi/rasp-web/app/views"
+):
+  
+app/controllers/hello_controller.rb:5:in `index'
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+Started GET "/index/hello" for 192.168.0.10 at 2017-12-15 23:12:39 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/index/hello"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/hello/indx" for 192.168.0.10 at 2017-12-15 23:17:43 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'indx' could not be found for HelloController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/hello/index" for 192.168.0.10 at 2017-12-15 23:17:47 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HelloController#index as HTML
+Completed 500 Internal Server Error in 800ms
+
+
+  
+ActionView::MissingTemplate (Missing template hello/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pi/rasp-web/app/views"
+):
+  
+app/controllers/hello_controller.rb:5:in `index'
+Started GET "/hello/index" for 192.168.0.10 at 2017-12-15 23:24:32 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+Processing by HelloController#index as HTML
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms)
+
+
+Started GET "/hello/index" for 192.168.0.10 at 2017-12-15 23:39:55 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+Processing by HelloController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ActionView::MissingTemplate (Missing template hello/special with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pi/rasp-web/app/views"
+):
+  
+app/controllers/hello_controller.rb:6:in `index'
+Started GET "/hello/index" for 192.168.0.10 at 2017-12-15 23:49:28 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+Processing by HelloController#index as HTML
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms)
+
+
+Started GET "/hello/view" for 192.168.0.10 at 2017-12-15 23:50:41 +0900
+Cannot render console from 192.168.0.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+Processing by HelloController#view as HTML
+  Rendering hello/view.html.erb within layouts/application
+  Rendered hello/view.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 2783ms (Views: 2780.9ms)
+
+
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /home/pi/rasp-web/config/routes.rb:3)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (25.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (30.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBooks (20171215150437)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "price" integer, "publish" varchar, "published" date, "cd" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171215150437"]]
+  [1m[35m (41.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-12-15 15:09:46.858712"], ["updated_at", "2017-12-15 15:09:46.858712"]]
+  [1m[35m (21.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
